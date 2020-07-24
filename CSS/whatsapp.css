@@ -1,0 +1,51 @@
+.fixed-whatsapp {
+    position: fixed;
+    bottom: 0px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 99999;
+}
+
+.fixed-whatsapp:before{
+    content: "";
+    background-repeat: no-repeat;
+    background-size: 25px 25px;
+    background-position: center center;
+    width: 40px;
+    height: 40px;
+    background-image: url("https://png.pngtree.com/element_our/sm/20180626/sm_5b321c98efaa6.jpg");
+    background-color: black;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 100%;
+    box-shadow: 0 1px 1.5px black, 0 1px 1.5px limegreen;   
+}
+
+.fixed-whatsapp::after{
+    content: "Hai Saya ingin bertanya";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right:100px ;
+    left: 260px;
+    border-radius: 4px;
+    padding: 10px 10px;
+    bottom: 20%;
+    margin-bottom: 0px;
+    text-align: right;
+    color: lime;
+    border: 1px solid white;
+    background: yellowgreen;
+    opacity: 0;
+    transition: all.4s ease-in-out;
+    font-size: 90%;
+    line-height: 1.1;
+}
+
+.fixed-whatsapp:hover::after{
+    opacity: 1;
+    right: 0;
+
+}
